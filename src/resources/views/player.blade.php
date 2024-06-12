@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Música</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="player">
+            <div class="cover">
+                <img id="cover" src="imagens/snuff.jpg" alt="Capa da Música">
+            </div>
+            <div class="info">
+                <h2 id="title">Snuff</h2>
+                <h3 id="artist">Corey Taylor</h3>
+                <audio id="audio" src="musicas/Corey Taylor - Snuff.mp3" controls></audio>
+            </div>
+            <div class="controls">
+                <button id="prev"><i class="fas fa-backward"></i></button>
+                <button id="play"><i class="fas fa-play"></i></button>
+                <button id="next"><i class="fas fa-forward"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

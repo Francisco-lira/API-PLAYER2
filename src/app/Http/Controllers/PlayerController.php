@@ -17,6 +17,12 @@ class PlayerController extends Controller
             $lista["musicas"][0]["imageUrl "] = "https://github.com/Francisco-lira/Player-musica-js/blob/main/imagens/snuff.jpg";
             $lista["musicas"][0]["audioUrl"] = "https://github.com/Francisco-lira/Player-musica-js/blob/main/musicas/Corey%20Taylor%20-%20Snuff.mp3";
         
+            $lista["musicas"][1]["title"] = "Under The Graveyard";
+            $lista["musicas"][1]["artist"]  = "Ozzy Osbourne";
+            $lista["musicas"][1]["imageUrl "] = "https://github.com/Francisco-lira/Player-musica-js/blob/main/imagens/OzzyUnderTheGraveyard.jpg";
+            $lista["musicas"][1]["audioUrl"] = "https://github.com/Francisco-lira/Player-musica-js/blob/main/musicas/Ozzy%20Osbourne%20-%20Under%20The%20Graveyard.mp3";
+            
+
             return response()->json($lista);
            
         }
@@ -54,6 +60,12 @@ class PlayerController extends Controller
         $lista->artist = "Corey Talor";
         $lista->imageUrl = "https://github.com/Francisco-lira/Player-musica-js/blob/main/imagens/snuff.jpg";
         $lista->audioUrl = "https://github.com/Francisco-lira/Player-musica-js/blob/main/musicas/Corey%20Taylor%20-%20Snuff.mp3";
+        $lista->save();
+
+        $lista->title = "Under The Graveyard";
+        $lista->artist = "Ozzy Osbourne";
+        $lista->imageUrl = "https://github.com/Francisco-lira/Player-musica-js/blob/main/imagens/OzzyUnderTheGraveyard.jpg";
+        $lista->audioUrl = "https://github.com/Francisco-lira/Player-musica-js/blob/main/musicas/Ozzy%20Osbourne%20-%20Under%20The%20Graveyard.mp3";
         $lista->save();
     }
 
